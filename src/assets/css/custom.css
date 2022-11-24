@@ -2,7 +2,7 @@
 
 Project:       Fitzaro
 Last change:   20/07/2022
-Author   :     the_krishna   
+Author   :     the_krishna
 Primary use:   Gym & Fitness Template
 
 -------------------------------------------------------------------*/
@@ -12,8 +12,8 @@ Primary use:   Gym & Fitness Template
                             [Table of contents]
 
 1. Default css
-2. Button  
-3. Preloader 
+2. Button
+3. Preloader
 4. Animation
 5. scroll bottom-top css
 6. Header
@@ -38,16 +38,16 @@ Primary use:   Gym & Fitness Template
 -------------------------------------------------------------------*/
 
 /*------------------------ [Color codes] ------------------------
-                        
 
-Background: #ffffff 
-Content:    #444444 
+
+Background: #ffffff
+Content:    #444444
 Heading h1: #ffffff
-Header h2, h3, h4, h5, h6:  #000000  
+Header h2, h3, h4, h5, h6:  #000000
 
-a (standard):  #ffffff 
-a (visited):   #ffffff 
-a (hover):   #EA1C29 
+a (standard):  #ffffff
+a (visited):   #ffffff
+a (hover):   #EA1C29
 a (active):  #ffffff
 
 -------------------------------------------------------------------*/
@@ -153,7 +153,7 @@ li {
     position: relative;
 }
 a:hover{
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 a:hover, a:visited, a:active, a:focus {
     text-decoration: none;
@@ -941,8 +941,8 @@ input:focus-visible {
 .navbar_main .sidebar-toggle span {
     width: 25px;
 }
-.navbar_main .sidebar-toggle::before, 
-.navbar_main .sidebar-toggle::after, 
+.navbar_main .sidebar-toggle::before,
+.navbar_main .sidebar-toggle::after,
 .navbar_main .sidebar-toggle span {
     display: inline-block;
     height: 0;
@@ -1026,7 +1026,7 @@ input:focus-visible {
     -o-transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navbar-header .sidebar-menu .side_social_info img, 
+.navbar-header .sidebar-menu .side_social_info img,
 .navbar-header .sidebar-menu .time-schedule {
     opacity: 0;
     -webkit-transform: translateX(-100%);
@@ -1036,7 +1036,7 @@ input:focus-visible {
     -o-transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navbar-header .sidebar-menu.active .side_social_info img, 
+.navbar-header .sidebar-menu.active .side_social_info img,
 .navbar-header .sidebar-menu.active .time-schedule {
     opacity: 1;
     -webkit-transform: none;
@@ -1256,7 +1256,7 @@ input:focus-visible {
 .scroll-arrow {
   display: block;
   -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg); 
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   border-right: 2px solid red;
   border-bottom: 2px solid red;
@@ -1978,7 +1978,7 @@ input:focus-visible {
     -o-object-position: center;
     object-position: center;
 }
-.body_detail:hover .tabel_content h3, 
+.body_detail:hover .tabel_content h3,
 .body_detail:hover .tabel_content span{
     color: #ffffff;
     position: relative;
@@ -2289,7 +2289,7 @@ input:focus-visible {
 .best-trainer{
     position: relative;
 }
-.trainer_slider, .blog_slider{    
+.trainer_slider, .blog_slider{
     overflow: hidden;
     position: relative;
     z-index: 2;
@@ -2498,7 +2498,7 @@ input:focus-visible {
     -webkit-box-shadow: none;
     box-shadow: none;
     font-family: 'Roboto', sans-serif;
-} 
+}
 .form_start .input_area textarea {
     height: 138px;
 }
@@ -2622,8 +2622,8 @@ input:focus-visible {
     -moz-transform: scale(1.07);
     -ms-transform: scale(1.07);
     -o-transform: scale(1.07);
-    transform: scale(1.07); 
-    -webkit-transition: all 0.4s ease-in-out; 
+    transform: scale(1.07);
+    -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
@@ -2818,10 +2818,10 @@ input:focus-visible {
     background: #55acee;
 }
 .footer-social-list .instagram-ic:before {
-    background: #f09433; 
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
 }
 .footer-social-list .youtube-ic:before {
     background: #EA1C29;
@@ -2860,7 +2860,7 @@ input:focus-visible {
     line-height: 21px;
     color: #ffffff;
 }
-.locate_places a:hover, 
+.locate_places a:hover,
 .copyright_privacy a:hover{
     color: #EA1C29;
 }
@@ -2919,7 +2919,7 @@ body::-webkit-scrollbar-thumb {
 
 /*********************** 22. Mouse Cursor Dragging Ball ******************/
 
-.mouseCursor {
+/*.mouseCursor {
     position: fixed;
     left: 0;
     top: 0;
@@ -2984,4 +2984,4 @@ body::-webkit-scrollbar-thumb {
 }
 .cursor-inner.hover{
     background-color: #ffffff;
-}
+}*/

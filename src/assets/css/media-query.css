@@ -271,7 +271,7 @@
 		bottom: 90px;
 	}
 
-	
+
 
 }
 
@@ -288,7 +288,7 @@
 		width: 48px;
 		height: 48px;
 		line-height: 48px;
-		cursor: pointer;
+		/*cursor: pointer;*/
 		color: #EA1C29;
 		background-color: transparent;
 		border: none;
@@ -357,15 +357,15 @@
 		border: none;
 		color: #000000;
 		background: transparent;
-		cursor: pointer;
+		/*cursor: pointer;*/
 		font-size: 0;
 		line-height: 0;
 	}
-	.navbar_expand .navbar_main .sidebar-toggle.active::before, 
+	.navbar_expand .navbar_main .sidebar-toggle.active::before,
 	.navbar_expand .navbar_main .sidebar-toggle.active::after {
 		transform: scale(0.6);
 	}
-	.navbar_expand .navbar_main .sidebar-toggle::before, 
+	.navbar_expand .navbar_main .sidebar-toggle::before,
 	.navbar_expand .navbar_main .sidebar-toggle::after {
 		content: '';
 	}
@@ -377,8 +377,8 @@
 		bottom: 10px;
 		left: initial;
 	}
-	.navbar_expand .navbar_main .sidebar-toggle::before, 
-	.navbar_expand .navbar_main .sidebar-toggle::after, 
+	.navbar_expand .navbar_main .sidebar-toggle::before,
+	.navbar_expand .navbar_main .sidebar-toggle::after,
 	.navbar_expand .navbar_main .sidebar-toggle span {
 		display: inline-block;
 		width: 6px;
@@ -424,8 +424,8 @@
 		box-shadow: 0 0 22px -4px rgb(0 0 0 / 17%);
 	}
 	.navbar-header .sidebar-menu .side_social_info img,
-	.navbar-header .sidebar-menu .time-schedule, 
-	.navbar-header .sidebar-menu .social_list li, 
+	.navbar-header .sidebar-menu .time-schedule,
+	.navbar-header .sidebar-menu .social_list li,
 	.side_panel, .navbar-header .sidebar-menu .list-social-ic li{
 		transform: none;
 		transition: none;
@@ -543,7 +543,7 @@
 	.top-arrow-grp{
 		left: 5px;
 	}
-	.right-arrow-grp .arrow, 
+	.right-arrow-grp .arrow,
 	.top-arrow-grp .arrow{
 		width: 12px;
 		height: 12px;
@@ -1068,8 +1068,8 @@
 	.service_wrappe .service_title {
 		padding-left: 15px;
 	}
-	.fitzaro_video:before, .fitzaro_video:after, 
-	.testimonial-section:before, .testimonial-section:after, 
+	.fitzaro_video:before, .fitzaro_video:after,
+	.testimonial-section:before, .testimonial-section:after,
 	.fitzaro_banner:before{
 		content: none;
 	}
@@ -1228,7 +1228,7 @@
 	.copyright_privacy a{
 		font-size: 16px;
 	}
-	.abo_content .sub_heading, .abo_content .main_heading, 
+	.abo_content .sub_heading, .abo_content .main_heading,
 	.abo_content .about_detail{
 		text-align: center;
 		display: block;
@@ -1413,7 +1413,7 @@
 	}
 	.service_wrappe .blogs-block{
 		text-align: center!important;
-		padding-top: 15px;	
+		padding-top: 15px;
 	}
 	.service_wrappe .service_title{
 		padding: 10px 0 0 0;

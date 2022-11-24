@@ -16,38 +16,11 @@
                         </a>
                     </div>
                 </div>
-                hola hola
                 <div class="navbar_collapse">
                     <ul class="navbar_nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#mission">Mission</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#service">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#classes">classes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#testimonial">Testimonial</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#price">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#trainer">Trainer</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#news">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact Us</a>
+                        <li class="nav-item" *ngFor="let item of dataMenu; let i=index">
+                            <a class="nav-link active" [href]="item.refer" *ngIf="i==0">{{item.name}}</a>
+                            <a class="nav-link" [href]="item.refer" *ngIf="i>0">{{item.name}}</a>
                         </li>
                     </ul>
                 </div>
@@ -60,17 +33,17 @@
             <div class="side_social_info">
                 <img src="assets/images/svg/watch.svg" alt="clock image" class="img-fluid">
                 <div class="time-schedule">
-                    <div class="weekly-day">Mon - Fri</div>
-                    <p class="m-0">7 AM - 10 PM</p>
+                    <div class="weekly-day">{{dataAtencion.semana}}</div>
+                    <p class="m-0">{{dataAtencion.semanahora}}</p>
                 </div>
                 <div class="time-schedule">
-                    <div class="weekly-day">Sat - Sun</div>
-                    <p class="m-0">7 AM - 2 PM</p>
+                    <div class="weekly-day">{{dataAtencion.finde}}</div>
+                    <p class="m-0">{{dataAtencion.findehora}}</p>
                 </div>
                 <ul class="social_list">
-                    <li><a href="tel:+012345678899">+01 234 567 8899</a></li>
-                    <li class="mb-5"><a href="mailto:contact@fitzaro.com">contact@fitzaro.com</a></li>
-                    <li><p class="m-0">121 Manila St. Brookly, CA</p></li>
+                    <li><a href="tel:+012345678899">{{dataAtencion.telefono}}</a></li>
+                    <li class="mb-5"><a href="mailto:contact@fitzaro.com">{{dataAtencion.correo}}</a></li>
+                    <li><p class="m-0">{{dataAtencion.direccion}}</p></li>
                 </ul>
             </div>
             <div class="side_panel">
