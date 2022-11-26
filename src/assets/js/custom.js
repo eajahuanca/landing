@@ -34,10 +34,10 @@ $(document).ready(function(){
         var sticky = $('.navbar-header'),
         scroll = $(window).scrollTop();
 
-        if (scroll >= 40) { 
-            sticky.addClass('sticky'); 
+        if (scroll >= 40) {
+            sticky.addClass('sticky');
         }
-        else { 
+        else {
             sticky.removeClass('sticky');
         }
     });
@@ -50,7 +50,7 @@ $(document).ready(function(){
     ====================================== */
 
     $(window).on("load", function() {
-        $('.preloader').fadeOut(); 
+        $('.preloader').fadeOut();
     });
 
 
@@ -314,8 +314,8 @@ startCount();
     $(window).on('mousemove click', function(e) {
 
         var isHovered = $('.animate-this:hover').length > 0;
-        console.log(isHovered);
-        
+        //console.log(isHovered);
+
         //if(!$(e.target).hasClass('animate-this')) {
             if(!isHovered) {
                 var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX)),
@@ -369,7 +369,7 @@ sliderBgSetting.each(function(indx){
 /* ===================================
     mouse pointer cursor
     ====================================== */
-
+/*
     function itCursor() {
         var myCursor = jQuery(".mouseCursor");
         if (myCursor.length) {
@@ -401,8 +401,8 @@ sliderBgSetting.each(function(indx){
                 (t.style.visibility = "visible");
             }
         }
-    }
-    itCursor();
+    } */
+    /* itCursor(); */
     var cursor = $(".cursor-outer"),
     follower = $(".cursor-inner");
 
@@ -432,14 +432,14 @@ sliderBgSetting.each(function(indx){
     ====================================== */
 
     $(document).ready(function(){
-        $(".dropdown").hover(            
+        $(".dropdown").hover(
             function() {
                 $('.dropdown-menu', this).not('.dropdown-menu').stop(true,true).slideDown("400");
-                $(this).toggleClass('open');        
+                $(this).toggleClass('open');
             },
             function() {
                 $('.dropdown-menu', this).not('.dropdown-menu').stop(true,true).slideUp("400");
-                $(this).toggleClass('open');       
+                $(this).toggleClass('open');
             }
             );
     });

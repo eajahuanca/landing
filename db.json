@@ -1,13 +1,22 @@
 {
-    "menu": [
-        {"ref": "home", "name":"home"},
-        {"ref": "about", "name": "About"},
-        {"ref": "mission", "name": "Mission"},
-        {"ref": "service", "name": "Services"},
-        {"ref": "classes", "name": "Classes"},
-        {"ref": "testimonial", "name": "Testimonials"},
-        {"ref": "price", "name": "Pricing"},
-        {"ref": "trainer", "name": "Trainers"},
-        {"ref": "contact", "name": "Contact Us"}
-    ]
+  "menu": [
+    { "refer": "#home", "name": "Home" },
+    { "refer": "#about", "name": "About" },
+    { "refer": "#mission", "name": "Mission" },
+    { "refer": "#service", "name": "Services" },
+    { "refer": "#classes", "name": "Classes" },
+    { "refer": "#testimonial", "name": "Testimomial" },
+    { "refer": "#price", "name": "Pricing" },
+    { "refer": "#trainer", "name": "Trainer" },
+    { "refer": "#contact", "name": "Contact Us" }
+  ],
+  "atencion": {
+    "semana": "Mon - Fri",
+    "semanahora": "7 AM - 10 PM",
+    "finde": "Sat - Sun",
+    "findehora": "7 AM - 2 PM",
+    "telefono": "+01 234 567 8899",
+    "correo": "correo@fitzaro.com",
+    "direccion": "121 Manila St. Brookly, CA"
+  }
 }

@@ -1,40 +1,43 @@
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
-import { Subject, takeUntil } from 'rxjs';
-import { Menu } from 'src/app/modelos/menu';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { Atencion, Menu } from 'src/app/models/menu.model';
 import { MenuService } from 'src/app/services/menu.service';
 
 @Component({
 	selector: 'app-header',
 	templateUrl: './header.component.html',
-	styleUrls: ['./header.component.css'],
-	changeDetection: ChangeDetectionStrategy.OnPush
+	styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit, OnDestroy {
+  public dataMenu: Menu[] = [] as Menu[];
+  public dataAtencion: Atencion = {} as Atencion;
+  private subscription: Subscription | undefined;
 
-	public data: Menu[] = [] as Menu[];
-	private readonly dataUnsubscribe$ = new Subject();
+  constructor(private menuService: MenuService) { }
 
-	constructor(
-		private readonly changeDetectorRef: ChangeDetectorRef,
-		private readonly menuService: MenuService ) { }
+  ngOnInit(): void {
+    this.getDataMenu();
+    this.getDataAtencion();
+  }
 
-	ngOnInit() {
-		this.getDataMenu();
-	}
+  public getDataMenu(){
+    this.subscription = this.menuService.getMenu().subscribe(
+      response => {
+        this.dataMenu = response;
+      }
+    );
+  }
 
-	public getDataMenu(){
-		this.menuService.getMenu()
-		//.pipe(takeUntil(this.dataUnsubscribe$))
-		.subscribe((response) => {
-			this.data = response;
-			console.log({'kkjhggghfhffhfhf'});
-			this.changeDetectorRef.detectChanges();
-		});
-	}
+  public getDataAtencion(){
+    this.subscription = this.menuService.getAtencion().subscribe(
+      response => {
+        this.dataAtencion = response;
+      }
+    );
+  }
 
-	ngOnDestroy() {
-		//this.dataUnsubscribe$.next();
-		this.dataUnsubscribe$.complete();
-	}
+  ngOnDestroy() {
+    this.subscription?.unsubscribe();
+  }
 
 }

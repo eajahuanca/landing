@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './componentes/header/header.component';
@@ -32,7 +33,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   imports: [
     BrowserModule,
+<<<<<<< HEAD
     NgbModule
+=======
+    HttpClientModule,
+>>>>>>> 6cbbe0f69330c3656c8d33eebff4bbb8b7e1dccd
   ],
   providers: [],
   bootstrap: [AppComponent]
