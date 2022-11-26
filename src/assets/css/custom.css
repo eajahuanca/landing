@@ -58,7 +58,7 @@ body {
     color: #000000;
     background-color: #ffffff;
     font-family: 'Roboto', sans-serif;
-    cursor: none;
+    /*cursor: none;*/
 }
 html {
     scroll-behavior: smooth;
@@ -153,7 +153,7 @@ li {
     position: relative;
 }
 a:hover{
-    /*cursor: pointer;*/
+    cursor: pointer;
 }
 a:hover, a:visited, a:active, a:focus {
     text-decoration: none;
@@ -1820,7 +1820,7 @@ input:focus-visible {
     color: red;
 }
 .box-tool:hover{
-    cursor: none;
+    /*cursor: none;*/
 }
 
 

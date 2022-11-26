@@ -33,11 +33,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   imports: [
     BrowserModule,
-<<<<<<< HEAD
-    NgbModule
-=======
+    NgbModule,
     HttpClientModule,
->>>>>>> 6cbbe0f69330c3656c8d33eebff4bbb8b7e1dccd
   ],
   providers: [],
   bootstrap: [AppComponent]

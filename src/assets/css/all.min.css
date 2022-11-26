@@ -563,8 +563,8 @@
 .ri-cup-line:before { content: "\ec06"; }
 .ri-currency-fill:before { content: "\ec07"; }
 .ri-currency-line:before { content: "\ec08"; }
-.ri-cursor-fill:before { content: "\ec09"; }
-.ri-cursor-line:before { content: "\ec0a"; }
+/*.ri-cursor-fill:before { content: "\ec09"; }
+.ri-cursor-line:before { content: "\ec0a"; }*/
 .ri-customer-service-2-fill:before { content: "\ec0b"; }
 .ri-customer-service-2-line:before { content: "\ec0c"; }
 .ri-customer-service-fill:before { content: "\ec0d"; }
@@ -1160,7 +1160,7 @@
 .ri-infrared-thermometer-line:before { content: "\ee5b"; }
 .ri-ink-bottle-fill:before { content: "\ee5c"; }
 .ri-ink-bottle-line:before { content: "\ee5d"; }
-.ri-input-cursor-move:before { content: "\ee5e"; }
+/*.ri-input-cursor-move:before { content: "\ee5e"; }*/
 .ri-input-method-fill:before { content: "\ee5f"; }
 .ri-input-method-line:before { content: "\ee60"; }
 .ri-insert-column-left:before { content: "\ee61"; }

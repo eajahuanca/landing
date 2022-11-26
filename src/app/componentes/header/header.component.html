@@ -16,20 +16,11 @@
                         </a>
                     </div>
                 </div>
-<<<<<<< HEAD
-                
-                <div class="navbar_collapse">
-                    <ul class="navbar_nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item" *ngFor="let item of data; let i = index">
-                            <a class="nav-link active" href="ref" *ngIf="i==0">{{item.name}}</a>
-                            <a class="nav-link" href="ref" *ngIf="i>0">{{item.name}}</a>
-=======
                 <div class="navbar_collapse">
                     <ul class="navbar_nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item" *ngFor="let item of dataMenu; let i=index">
                             <a class="nav-link active" [href]="item.refer" *ngIf="i==0">{{item.name}}</a>
                             <a class="nav-link" [href]="item.refer" *ngIf="i>0">{{item.name}}</a>
->>>>>>> 6cbbe0f69330c3656c8d33eebff4bbb8b7e1dccd
                         </li>
                     </ul>
                 </div>
