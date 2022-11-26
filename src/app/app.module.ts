@@ -13,6 +13,7 @@ import { TestimonialComponent } from './componentes/testimonial/testimonial.comp
 import { PricesComponent } from './componentes/prices/prices.component';
 import { TrainersComponent } from './componentes/trainers/trainers.component';
 import { ContactsComponent } from './componentes/contacts/contacts.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ContactsComponent } from './componentes/contacts/contacts.component';
     ContactsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

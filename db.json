@@ -1,8 +1,13 @@
 {
-    "test": [
-        {"id": 1, "name": "test1"},
-        {"id": 2, "name": "test2"},
-        {"id": 3, "name": "test3"},
-        {"id": 4, "name": "test4"}
+    "menu": [
+        {"ref": "home", "name":"home"},
+        {"ref": "about", "name": "About"},
+        {"ref": "mission", "name": "Mission"},
+        {"ref": "service", "name": "Services"},
+        {"ref": "classes", "name": "Classes"},
+        {"ref": "testimonial", "name": "Testimonials"},
+        {"ref": "price", "name": "Pricing"},
+        {"ref": "trainer", "name": "Trainers"},
+        {"ref": "contact", "name": "Contact Us"}
     ]
 }

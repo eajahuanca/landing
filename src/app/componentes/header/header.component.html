@@ -16,38 +16,12 @@
                         </a>
                     </div>
                 </div>
-                hola hola
+                
                 <div class="navbar_collapse">
                     <ul class="navbar_nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#mission">Mission</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#service">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#classes">classes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#testimonial">Testimonial</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#price">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#trainer">Trainer</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#news">News</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact Us</a>
+                        <li class="nav-item" *ngFor="let item of data; let i = index">
+                            <a class="nav-link active" href="ref" *ngIf="i==0">{{item.name}}</a>
+                            <a class="nav-link" href="ref" *ngIf="i>0">{{item.name}}</a>
                         </li>
                     </ul>
                 </div>
